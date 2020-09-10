@@ -18,7 +18,9 @@ public class Exemplo1 {
 		
 		ServicoProduto sp = new ServicoProduto();
 		
-		double soma = sp.filtroSoma(list);
+		//double soma = sp.filtroSoma(list, p -> p.getNome().charAt(0)=='M');
+		
+		double soma = sp.filtroSoma(list, p -> p.getPreco() < 100.00);
 		
 		System.out.println("Soma= R$ "+ String.format("%.2f",soma));
 
