@@ -10,7 +10,7 @@ public class ServicoProduto {
 		double soma = 0;
 		for(Produto p: list) {
 			if(p.getNome().charAt(0)=='T') {
-				soma =+ p.getPreco();
+				soma += p.getPreco();
 			}
 		}
 		

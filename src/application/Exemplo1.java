@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import model.entities.Produto;
+import model.service.ServicoProduto;
 
 public class Exemplo1 {
 
@@ -15,7 +16,11 @@ public class Exemplo1 {
 		list.add(new Produto("Tablet", 350.50));
 		list.add(new Produto("HD Case", 80.90));
 		
+		ServicoProduto sp = new ServicoProduto();
 		
+		double soma = sp.filtroSoma(list);
+		
+		System.out.println("Soma= R$ "+ String.format("%.2f",soma));
 
 	}
 
